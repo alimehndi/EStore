@@ -1,0 +1,12 @@
+{
+  "name": "eshop",
+  "version": "2.0.0",
+  "description": "eCommerce applicationsbuild with the MERN stack",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ali Mehndi",
+  "license": "ISC"
+}
