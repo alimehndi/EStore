@@ -34,7 +34,7 @@ const HomeScreen = () => {
         </Message>
       ) : (
         <>
-          <Meta />
+          <Meta/>
           <h1>Latest Products</h1>
           <Row>
             {data.products.map((product) => (

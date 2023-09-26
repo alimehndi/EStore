@@ -1,6 +1,7 @@
 import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Rating from './Rating';
+import { FaRupeeSign } from 'react-icons/fa';
 
 const Product = ({ product }) => {
   return (
@@ -23,7 +24,7 @@ const Product = ({ product }) => {
           />
         </Card.Text>
 
-        <Card.Text as='h3'>${product.price}</Card.Text>
+        <Card.Text as='h3'><FaRupeeSign/>{product.price}</Card.Text>
       </Card.Body>
     </Card>
   );

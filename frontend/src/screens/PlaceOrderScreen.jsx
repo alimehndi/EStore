@@ -8,7 +8,7 @@ import CheckoutSteps from '../components/CheckoutSteps';
 import Loader from '../components/Loader';
 import { useCreateOrderMutation } from '../slices/ordersApiSlice';
 import { clearCartItems } from '../slices/cartSlice';
-
+import { FaRupeeSign } from 'react-icons/fa';
 const PlaceOrderScreen = () => {
   const navigate = useNavigate();
 
@@ -88,7 +88,7 @@ const PlaceOrderScreen = () => {
                           </Link>
                         </Col>
                         <Col md={4}>
-                          {item.qty} x ${item.price} = ${item.qty * item.price}
+                          {item.qty} x <FaRupeeSign/>{item.price} = <FaRupeeSign/>{item.qty * item.price}
                         </Col>
                       </Row>
                     </ListGroup.Item>
@@ -107,25 +107,25 @@ const PlaceOrderScreen = () => {
               <ListGroup.Item>
                 <Row>
                   <Col>Items</Col>
-                  <Col>${cart.itemsPrice}</Col>
+                  <Col><FaRupeeSign/>{cart.itemsPrice}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Row>
                   <Col>Shipping</Col>
-                  <Col>${cart.shippingPrice}</Col>
+                  <Col><FaRupeeSign/>{cart.shippingPrice}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Row>
                   <Col>Tax</Col>
-                  <Col>${cart.taxPrice}</Col>
+                  <Col><FaRupeeSign/>{cart.taxPrice}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Row>
                   <Col>Total</Col>
-                  <Col>${cart.totalPrice}</Col>
+                  <Col><FaRupeeSign/>{cart.totalPrice}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
